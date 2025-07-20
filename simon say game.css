@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+    overflow: hidden;
+}
+#instructions{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 260px;
+    height: 100vh;
+}
+li{
+    text-align: left;
+}
+.instructions{
+    display: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.common{
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.box1{
+    background-color: #f99b45;
+}
+.box2{
+    background-color: #d95980;
+}
+.box3{
+    background-color: #819ff9;
+}
+.box4{
+    background-color: #63aac0;
+}
+.flash{
+    background-color: white;
+}
+.red{
+    background-color: red;
+}
+.flashGreen{
+    background-color: rgb(9, 153, 9);
+}
+.highestScore{
+    position: absolute;
+    top: 80px;
+    right: 80px;
+}
