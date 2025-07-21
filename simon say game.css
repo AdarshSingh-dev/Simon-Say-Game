@@ -100,7 +100,7 @@ li{
         font-size: larger;
         border-radius: 30px;
         position: absolute;
-        bottom: 70px;
+        bottom: 20px;
     }
 }
 @media(min-width: 720px){
