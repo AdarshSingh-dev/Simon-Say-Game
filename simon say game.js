@@ -7,6 +7,7 @@ let hidden=document.querySelector("#hidden");
 let score=0;
 let level;
 let trick=false;
+let trick2=false;
 
 
 let playBtn=document.querySelector(".play");
@@ -17,7 +18,10 @@ playBtn.addEventListener("click",function(){
     userSequence=[];
     start.style.color="black";
     start.innerText="Start";
-    level=document.createElement("level");
+    if(trick2==false){
+        level=document.createElement("level");
+        trick2=true;
+    }
     textAdd.append(level);
     playBtn.innerText="Enter:Restart";
     hidden.classList.remove("hidden");
@@ -121,5 +125,6 @@ function endGame(){
     }else{
         hiScore.innerHTML=`<h2>highest Score: <span style="color:red">${score}</span></h2>`;
     }
+    trick2=false;
     StartAgain();
 }
