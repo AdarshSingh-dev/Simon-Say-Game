@@ -68,19 +68,19 @@ function gameStart(){
     console.log(n);
     if(n==1){
         box1.classList.add("flash");
-        setTimeout(()=>box1.classList.remove("flash"),200);
+        setTimeout(()=>box1.classList.remove("flash"),250);
     }
     else if(n==2){
         box2.classList.add("flash");
-        setTimeout(()=>box2.classList.remove("flash"),200);   
+        setTimeout(()=>box2.classList.remove("flash"),250);   
     }
     else if(n==3){
         box3.classList.add("flash");
-        setTimeout(()=>box3.classList.remove("flash"),200);
+        setTimeout(()=>box3.classList.remove("flash"),250);
     }
     else{
         box4.classList.add("flash");
-        setTimeout(()=>box4.classList.remove("flash"),200);   
+        setTimeout(()=>box4.classList.remove("flash"),250);   
     }
 }
 box1.addEventListener("click", () => handleClick(1));
