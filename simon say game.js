@@ -3,13 +3,33 @@ let textAdd=document.querySelector(".text");
 let start=document.querySelector("#start");
 let hiScore=document.querySelector(".highestScore");
 let instructions=document.querySelector("#instructions");
+let hidden=document.querySelector("#hidden");
 let score=0;
 let level;
 let trick=false;
+
+
+let playBtn=document.querySelector(".play");
+playBtn.addEventListener("click",function(){
+    instructions.classList.add("instructions");
+    count=0;
+    systemSequence=[];
+    userSequence=[];
+    start.style.color="black";
+    start.innerText="Start";
+    level=document.createElement("level");
+    textAdd.append(level);
+    playBtn.innerText="Enter:Restart";
+    hidden.classList.remove("hidden");
+    gameStart();
+});
+
+
 function StartAgain(){
     level.remove();
     trick=false;
 }
+
 addEventListener("keypress",function (e){
     if(e.key=='Enter'){
         instructions.classList.add("instructions");
