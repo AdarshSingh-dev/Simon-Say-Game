@@ -8,22 +8,29 @@
     <title>Simon Say Game</title>
 </head>
 <body>
-    <div id="instructions">
-        <h3>
-            🕹️ <span>Game Instructions: How to Play</span>
-            <ul>
-                <li>Press Enter to start the game and begin Level 1.</li>
-                <li>Watch the box that flashes—remember the color and its position.</li>
-                <li>When it's your turn, click the boxes in the same order as they flashed.</li>
-                <li>Each correct round increases your level and adds a new box to the sequence.</li>
-                <li>If you click the wrong box, the game ends.</li>
-                <li>Press Enter again to restart and challenge your memory!</li>
-                <li>Try to beat your highest score, displayed in the top corner.</li>
-            </ul>
+    <div class="media">
+        <h3 >
+            <div id="instructions">
+                <div class="center">
+                <span class="instructions-Heading">Game Instructions: How to Play</span>
+                <ul>
+                    <li>Press Enter to start the game and begin Level 1.</li>
+                    <li>Watch the box that flashes—remember the color and its position.</li>
+                    <li>When it's your turn, click the boxes in the same order as they flashed.</li>
+                    <li>Each correct round increases your level and adds a new box to the sequence.</li>
+                    <li>If you click the wrong box, the game ends.</li>
+                    <li>Press Enter again to restart and challenge your memory!</li>
+                    <li>Try to beat your highest score, displayed in the top corner.</li>
+                </ul>
+            </div>
+            </div>
+            
         </h3>
+        <button class="play">Enter:Play</button>
     </div>
-    <div class="text">
-        <h1>Simon Say Game</h1>
+    <div id="hidden" class="hidden">
+        <div class="text">
+        <h1 class="space">Simon Say Game</h1>
         <div>
             <h2 id="start">Press Enter key to start the Game </h2>
             <div class="highestScore"></div>
@@ -40,6 +47,8 @@
             <div class="box4 common"></div>
         </div>
     </div>
+    </div>
+    
 
     <script src="simon say game.js"></script>
 </body>
