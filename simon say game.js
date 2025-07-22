@@ -11,24 +11,7 @@ let trick2=false;
 
 
 let playBtn=document.querySelector(".play");
-let restart=document.querySelector(".replay");
 playBtn.addEventListener("click",function(){
-    playBtn.classList.add("hide");
-    instructions.classList.add("instructions");
-    count=0;
-    systemSequence=[];
-    userSequence=[];
-    start.style.color="black";
-    start.innerText="Start";
-    if(trick2==false){
-        level=document.createElement("level");
-        trick2=true;
-    }
-    textAdd.append(level);
-    hidden.classList.remove("hidden");
-    gameStart();
-});
-restart.addEventListener("click",function(){
     instructions.classList.add("instructions");
     count=0;
     systemSequence=[];
