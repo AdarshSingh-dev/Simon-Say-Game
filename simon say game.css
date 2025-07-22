@@ -2,6 +2,13 @@ body{
     text-align: center;
     overflow: hidden;
 }
+#instructions{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 260px;
+    height: 100vh;
+}
 li{
     text-align: left;
 }
@@ -92,15 +99,8 @@ li{
         height: 80px;
         font-size: larger;
         border-radius: 30px;
-    }
-    .hide{
-        display: none;
-    }
-    .replay{
-        width: 150px;
-        height: 80px;
-        font-size: larger;
-        border-radius: 30px;
+        position: absolute;
+        bottom: 5px;
     }
 }
 @media(min-width: 720px){
