@@ -1,6 +1,5 @@
 body{
     text-align: center;
-    overflow: hidden;
 }
 #instructions{
     position: absolute;
@@ -100,7 +99,7 @@ li{
         font-size: larger;
         border-radius: 30px;
         position: absolute;
-        bottom: 5px;
+        top: 700px;
     }
 }
 @media(min-width: 720px){
